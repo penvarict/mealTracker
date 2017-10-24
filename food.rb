@@ -1,8 +1,8 @@
 class Food
-	attr_accessor :name, :portion_size, :calories, #portions eaten
+	attr_accessor :name, :portion_size, :calories, :portions_eaten
 
 
-	def initialize(name, portion_size, calories)
+	def initialize (name, portion_size, calories)
 		@name = name
 		@portion_size = portion_size
 		@calories = calories
