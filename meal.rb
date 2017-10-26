@@ -19,15 +19,16 @@ class Meal
 	end
 
 	def calories
-		total_calories = 0
+		total_calories_in_meal = 0
 		food.each_with_index do |food_item,i|
-			total_calories +=food_item.total_calories(@portion_sizes[i])
+			total_calories_in_meal +=food_item.total_calories(@portion_sizes[i]) #total calories is the portions * calories function
 
 		end
 
-		total_calories
+		total_calories_in_meal
 
 	end
+
 
 
 	def to_s
