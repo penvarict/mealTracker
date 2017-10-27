@@ -36,7 +36,7 @@ class Meal
 		str = food_name 
 
 		food.each_with_index do |food_item, i| #food in meal
-			str += food_item.to_s + "| #{@portion_sizes[i]}\n"
+			str += food_item.to_s "| #{@portion_sizes[i]}\n"
 
 
 		end

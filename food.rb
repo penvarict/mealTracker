@@ -17,6 +17,7 @@ class Food
 	end
 
 	def to_s
+		
 		"#{name}|#{portion_size} | #{calories}"
 
 	end
