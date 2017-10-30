@@ -69,5 +69,11 @@ monday.add_meal(lunch)
 monday.add_meal(dinner)
 monday.add_meal(snacks)
 
+calories_in_monday= monday.dayCalorie
 
-puts monday.dayCalorie
+puts monday.dayCalorie #4,000 calories
+
+puts monday.dayCalorieGoal(calories_in_monday)
+
+monday.howFatIsDanThisMonth(monday.dayCalorie)
+
