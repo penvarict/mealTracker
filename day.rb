@@ -67,7 +67,7 @@ class Day
 
 
 	def to_s 	
-		puts "#{name}|#{meals}| #{number_of_cal}"
+		puts "#{name}|#{meals}| #{number_of_cal} #{day_of_week}"
 
 
 	end

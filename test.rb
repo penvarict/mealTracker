@@ -1,6 +1,8 @@
 require './food'
 require './meal'
 require './day'
+require './exercise'
+require './workout'
 
 scrambled_eggs = Food.new("Scrambled Eggs", "1 egg", 100)
 bacon = Food.new("Bacon", "3 slices", 100)
@@ -23,8 +25,20 @@ chips = Food.new("Chips", "10 Chips", 100)
 fruit_snacks = Food.new("Fruit Snack", "1 bag", 89)
 trail_mix = Food.new("Trail Mix", "1 cup", 693)
 
-# breakfast Monday
+# exercises
 
+jogging = Exercise.new("Jogging",300)
+yoga = Exercise.new("Yoga",240)
+weightlifting = Exercise.new("Weightlifting", 266)
+
+monday_workout = Workout.new("Monday")
+
+monday_workout.addExerciseToWorkout(jogging, 30)
+monday_workout.addExerciseToWorkout(yoga, 20)
+monday_workout.addExerciseToWorkout(weightlifting, 45)
+
+
+###
 
 breakfast = Meal.new("Breakfast")
 breakfast.add_food(scrambled_eggs, 3)
@@ -71,9 +85,14 @@ monday.add_meal(snacks)
 
 calories_in_monday= monday.dayCalorie
 
-puts monday.dayCalorie #4,000 calories
+# puts monday.dayCalorie #4,000 calories
 
-puts monday.dayCalorieGoal(calories_in_monday)
+# puts monday.dayCalorieGoal(calories_in_monday)
 
-monday.howFatIsDanThisMonth(monday.dayCalorie)
+# monday.howFatIsDanThisMonth(calories_in_monday)
+
+
+
+puts monday_workout.workoutCalories()
+
 
