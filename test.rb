@@ -95,6 +95,7 @@ puts "Dan will be #{monday.howFatIsDanThisMonth(calories_in_monday)} this month"
 calories_burned_monday = monday_workout.workoutCalories() 
 
 
-puts "After working out, Dan is #{monday_workout.workoutCalories()}
+puts "After working out, Dan net calories for monday is #{calories_in_monday - calories_burned_monday}"
+puts "If he works out like this every day, dan will be #{monday.howFatIsDanThisMonth(calories_in_monday-calories_burned_monday}pounds "
 
 
