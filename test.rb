@@ -74,7 +74,7 @@ snacks.add_food(chips,3)
 snacks.add_food(fruit_snacks, 1)
 snacks.add_food(trail_mix, 0.2)
 
-puts snacks.calories 
+#puts snacks.calories 
 
 
 monday = Day.new("Monday")
@@ -85,14 +85,16 @@ monday.add_meal(snacks)
 
 calories_in_monday= monday.dayCalorie
 
-# puts monday.dayCalorie #4,000 calories
+puts "Dan consumed #{monday.dayCalorie} on monday"
 
-# puts monday.dayCalorieGoal(calories_in_monday)
+puts "Dan is  #{monday.dayCalorieGoal(calories_in_monday)} to his goal"
 
-# monday.howFatIsDanThisMonth(calories_in_monday)
+puts "Dan will be #{monday.howFatIsDanThisMonth(calories_in_monday)} this month"
 
 
+calories_burned_monday = monday_workout.workoutCalories() 
 
-puts monday_workout.workoutCalories()
+
+puts "After working out, Dan is #{monday_workout.workoutCalories()}
 
 
